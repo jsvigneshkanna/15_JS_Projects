@@ -18,7 +18,9 @@
   - timer that finds the days, hours, mins, seconds remaining for new year
 
 3. Quiz app:
-  - 
+  - UIDesign (https://www.uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924)
+  - JSON questions and answers
+  - right or wrong icon after validation
 
   
 **Reference youtube** (https://www.youtube.com/watch?v=3PHXvlpOkf4)

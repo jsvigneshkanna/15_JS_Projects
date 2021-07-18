@@ -12,6 +12,23 @@ body {
     justify-content: center;
 }
 
+.score-container{
+    color: white;
+    background: rgb(125, 20, 231);
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    top: 1.2rem;
+    right: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+p{
+    margin: 3px;
+}
 .quiz-container {
     overflow: hidden;
     box-shadow: 0 0 10px 3px rgb(150, 105, 194);
@@ -23,18 +40,25 @@ body {
 }
 
 h2 {
-    text-align: center;
-    padding: 1rem;
+    text-align: left;
+    word-wrap: normal;
+    padding: 1.3rem;
     margin: 0;
 }
 
+.answer-container {
+    margin: 5px;
+    text-align: left;
+}
+
 .quiz-section {
-    padding: 3rem;
+    padding: 1.3rem;
 }
 
 ul {
     list-style: none;
-    padding: 0;
+    padding: 1.3rem;
+    text-align: left;
 }
 
 ul li {

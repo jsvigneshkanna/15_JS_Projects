@@ -7,27 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="score-container">
+        <p>Score:  </p>
+        <p class="score" id="score">0</p>
+    </div>
     <div class="quiz-container">
         <div class="quiz-section">
-            <h2>question section</h2>
-            <ul>
-                <li>
-                    <input type="radio" id = "a" name="answer" class="answer">
-                    <label id = "a_text" for="a">option_a</label>
-                </li>
-                <li>
-                    <input type="radio" id = "b" name="answer" class="answer">
-                    <label id = "b_text" for="b">option_b</label>
-                </li>
-                <li>
-                    <input type="radio" id = "c" name="answer" class="answer">
-                    <label id = "c_text" for="c">option_c</label>
-                </li>
-                <li>
-                    <input type="radio" id = "d" name="answer" class="answer">
-                    <label id = "d_text" for="d">option_d</label>
-                </li>
-            </ul>
+            <h2 id="question">Question</h2>
+            <div id="answer-container">
+                <ul>
+                    <li>
+                        <input type="radio" id = "a" name="answer" class="answer">
+                        <label id = "a_text" for="a">option_a</label>
+                        <span id="a_res"></span>
+                    </li>
+                    <li>
+                        <input type="radio" id = "b" name="answer" class="answer">
+                        <label id = "b_text" for="b">option_b</label>
+                        <span id="b_res"></span>
+                    </li>
+                    <li>
+                        <input type="radio" id = "c" name="answer" class="answer">
+                        <label id = "c_text" for="c">option_c</label>
+                        <span id="c_res"></span>
+                    </li>
+                    <li>
+                        <input type="radio" id = "d" name="answer" class="answer">
+                        <label id = "d_text" for="d">option_d</label>
+                        <span id="d_res"></span>
+                    </li>
+                </ul>
+            </div>            
         </div>      
         <button id="submit">Submit & Next</button>  
     </div>

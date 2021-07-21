@@ -1,0 +1,24 @@
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBm8rI6AYCBowV6ZISNnyhtCk-gCHW4yys",
+    authDomain: "js-quizapp-db.firebaseapp.com",
+    projectId: "js-quizapp-db",
+    storageBucket: "js-quizapp-db.appspot.com",
+    messagingSenderId: "809770109991",
+    appId: "1:809770109991:web:536dc3e4f51323e2f1d202",
+    measurementId: "G-3G5H05N5DS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>

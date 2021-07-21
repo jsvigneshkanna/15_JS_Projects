@@ -1,5 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/* Homepage styling starts */
+
+.heading-container {
+    position: fixed;
+    top: 0;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    color: rebeccapurple;
+    box-shadow: 3px 0px 3px 2px rgb(168, 150, 185);
+}
+
+.playerSelection-container{
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px 3px rgb(180, 157, 134);
+}
+
+.player-name-container {
+    padding-top: 15px;
+    font-size: 1.2rem;
+    width: 95%;
+}
+.player-name-container input {
+    font-size: 1.2rem;
+    border-style:solid;
+    border-color: rebeccapurple;
+    border-radius: 3px;
+}
+
+.player-name-container label {
+    font-weight: 900;
+}
+
+
+.player-name-container input:focus {
+    background-color: rgb(212, 213, 224);
+}
+
+.player-dp-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.player-dp-container ul {
+    display: flex;
+}
+.player-dp-container ul li {
+    padding-left: 15px;
+}
+
+/* Homepage Styling ends */
+
+
+/* quiz page styling starts */
+
 body {
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
@@ -14,7 +79,7 @@ body {
 
 .score-container{
     color: white;
-    background: rgb(125, 20, 231);
+    background: rgb(16, 42, 1);
     border-radius: 10px;
     width: max-content;
     height: max-content;
@@ -25,6 +90,21 @@ body {
     font-size: 1.2rem;
     display: flex;
 }
+
+.player-container {
+    color: white;
+    background: rgb(16, 42, 1);
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    top: 1.2rem;
+    left: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+}
+
 
 p{
     margin: 3px;
@@ -100,16 +180,15 @@ footer{
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: fixed;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    /* margin-left: 2.5%;
+    margin-right: 2.5%; */
     border-radius: 5px;
-    width: 95%;
+    width: 90%;
     bottom: 0;
-    left: 0;
     padding: 5px;
     text-align: center;
     color: rebeccapurple;
-    box-shadow: 0px 5px 5px 5px rebeccapurple;
+    box-shadow: 0px 5px 5px 5px rgb(186, 172, 201);
 }
 
 .copyright {
@@ -123,4 +202,118 @@ footer{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: bold;
+}
+
+/* Quiz page styling ends */
+
+/* hall of fame page styling starts */
+
+.hof-header-container {
+    position:absolute;
+    top: 0px;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 90%;
+    border-radius: 10px;
+    color: rebeccapurple;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    max-height: 10rem;
+}
+
+.hof-repeat-btn{
+    position: absolute;
+    width: min-content;
+    right: 0px;
+    border-radius: 10px;
+}
+
+table, th, td {
+    border: 1px solid rebeccapurple;
+    border-collapse: collapse;
+}
+
+table {
+    border-spacing: 5px;
+    width: 60%;
+    position: absolute;
+    margin-top: 10rem;
+    background-color: rgb(247, 245, 248);
+    color: black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    color: white;
+    background-color: tomato;
+}
+/* .result-board {
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+/* hall of fame page styling ends */
+
+/* media querys */
+@media screen and (max-width: 745px) {
+    h2 {
+        font-size: 1.1rem;
+        padding: .8rem;
+    }
+    .quiz-container {
+        width: 80%;
+    }
+
+    .heading-container footer {
+        width: 80%;
+    }
+
+    .playerSelection-container {
+        width: 80%;
+    }
+    .score-container {
+        top: 20px;
+        right: 15px;
+        background-color: rgb(156, 132, 180);
+    }
+
+    .player-container {
+        top: 20px;
+        left: 15px;
+        background-color: rgb(127, 73, 182);
+    }
+
+    .copyright {
+        font-size: 15px;
+        padding: 2px;
+    }
+
+    .hof-header-container {
+        flex-direction: column;
+        width: 85%;
+        box-shadow: 2px 3px 3px 3px rgb(223, 174, 166);
+        font-size: 1rem;
+        height: 7rem;
+    }
+
+    .hof-header {
+        font-size: 9px;
+    }
+
+    .hof-repeat-btn {
+        position: sticky;
+        height: max-content;
+        padding: 2px;
+    }
+    
+    table {
+        width: 80%;
+    }
 }

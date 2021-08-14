@@ -132,13 +132,7 @@ const dps = [
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBm8rI6AYCBowV6ZISNnyhtCk-gCHW4yys",
-    authDomain: "js-quizapp-db.firebaseapp.com",
-    projectId: "js-quizapp-db",
-    storageBucket: "js-quizapp-db.appspot.com",
-    messagingSenderId: "809770109991",
-    appId: "1:809770109991:web:536dc3e4f51323e2f1d202",
-    measurementId: "G-3G5H05N5DS"
+    // add the credentails
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
